@@ -36,7 +36,7 @@ $ adb shell pm install -t /tmp/chinotto.apk
 
 Now, a new app called **SecureTalk** should be available in your applications list.
 <p align="center">
-<img src="../media/secure-talk-logo.png" alt="drawing" style="width:300px;"/>
+<img src="../media/secure-talk-permissions.png" alt="drawing" style="width:300px;"/>
 </p>
 
 Once you launch the app, just hit the `Next` button a few times.
