@@ -28,7 +28,7 @@ The app is simple and asks for a secret string that isn't known.
 We start by using static analysis and we need MobSF that runs with the command:
 
 ```bash
-$ sudo docker run -it --rm -p 8000:8000 opensecurity/mobile-security-framework-mobsf:latest
+$ docker run -it --rm -p 8000:8000 opensecurity/mobile-security-framework-mobsf:latest
 ```
 
 Open the MobSF menu from [here](http://localhost:8000/).
@@ -73,7 +73,7 @@ The first condition ensures that root is not detected and the second one that th
 ```
 
 Our purpose is to get to the verify() method. At a first sight, the method calls another method from the a class.
-The a() method calls another mehod and gives it as arguments a Base64-encoded value and the result of the b method that receives a hex value. 
+The a() method calls another mehod and gives it as arguments a Base64-encoded value and the result of the b() method that receives a hex value. 
 It returns true if the input string is equal with the one obtain by the previous function.
 
 ```java
