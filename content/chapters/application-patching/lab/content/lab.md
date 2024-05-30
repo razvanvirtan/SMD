@@ -124,16 +124,16 @@ We obtain the string:"I want to believe"
 
 If you try to type the password, in some devices you will be denied if you don't pass all the checks. 
 Now, we need to find a way to bypass the conditions so it will work on all devices.
-n order to modify the code, we need to understand how it is compiled in Android.
+In order to modify the code, we need to understand how it is compiled in Android.
 
 ## Android Compilation Process
 During the first step for the compilation process for Android the source code and the custom libraries are transformed in bytecode(.class files) by the Javac(JIT Compiler/ Standard Java Compile).
 These classes are then made into .dex(Dalvik bytecode) code. This format is useful because it is optimized for Android runtime environment.
 The next step is forming the APK, that has all the data used to install and run an application on an Android device.
 These are the contents of an APK:
-    - .dex files
-    - compiled resources
-    - AndroidManifest.xml
+- .dex files
+- compiled resources
+- AndroidManifest.xml
 
 Go  [here](https://source.android.com/docs/core/runtime) to find more about the compilation process
 
@@ -289,10 +289,6 @@ We can simply delete the conditions and we obtain:
 ```
 
 Now we want to recompile the code into an APK and install it on our emulator.
-
-```bash
-$  adb install UnCrackable-Level1.apk 
-```
 
 ## Signing an APK
 
